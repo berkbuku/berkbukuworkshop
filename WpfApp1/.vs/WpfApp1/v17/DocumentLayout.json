@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Berk\\source\\repos\\WpfApp1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C671683A-5F99-4B6B-881A-4CB39D5B54D0}|WpfApp1\\WpfApp1.csproj|c:\\users\\berk\\desktop\\kullanicipaneli.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "KullaniciPaneli.xaml",
+              "DocumentMoniker": "C:\\Users\\Berk\\Desktop\\KullaniciPaneli.xaml",
+              "RelativeDocumentMoniker": "..\\..\\..\\Desktop\\KullaniciPaneli.xaml",
+              "ToolTip": "C:\\Users\\Berk\\Desktop\\KullaniciPaneli.xaml",
+              "RelativeToolTip": "..\\..\\..\\Desktop\\KullaniciPaneli.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-27T14:34:46.049Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

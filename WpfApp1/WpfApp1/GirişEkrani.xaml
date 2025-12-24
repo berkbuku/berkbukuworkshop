@@ -1,0 +1,30 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors" xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core" x:Class="WpfApp1.GirisEkrani"
+        mc:Ignorable="d"
+        Title="Adisyon V3 Giriş Paneli" Height="450" Width="800" WindowStartupLocation="CenterScreen" Icon="bb_adisyon_v3_64px.ico">
+
+    <Grid>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="283,193,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162" SpellCheck.IsEnabled="True" AutomationProperties.HelpText="Kullanıcı Adı Giriniz" x:Name="K_Adi_TxtBox"/>
+        <Label Content="Kullanıcı Adı" HorizontalAlignment="Left" Margin="207,193,0,0" VerticalAlignment="Top"/>
+        <Label Content="Şifre" HorizontalAlignment="Left" Margin="251,220,0,0" VerticalAlignment="Top"/>
+        <Image Margin="188,0,244,231" Source="29630cc9-1e1c-428f-b174-e25a8e874495.png" Stretch="Fill"/>
+        <PasswordBox HorizontalAlignment="Left" Margin="283,221,0,0" VerticalAlignment="Top" Width="162" Name="Sifre_TxtBoxpass" Height="22"/>
+        <Button Content="Giriş Yap" HorizontalAlignment="Left" Margin="320,248,0,0" VerticalAlignment="Top" Width="87" Click="Button_Click" IsDefault="True" Name="GirisYap_Button" Height="25"/>
+        <Label Content="Lütfen şahsınıza tanımlanmış olan kullanıcı adı ve şifrenizi giriniz." HorizontalAlignment="Left" Margin="254,278,0,0" VerticalAlignment="Top" Foreground="#FF1062C5" FontSize="9"/>
+        <Image HorizontalAlignment="Left" Height="25" Margin="231,278,0,0" VerticalAlignment="Top" Width="20" Source="{dx:DXImage SvgImages/Business Objects/BO_Contact.svg}"/>
+        <x:Code>
+            <![CDATA[
+            public void Test(object o,RoutedEventArgs e){
+            Title="Metod Çağırıldı";
+            }
+            ]]>
+        </x:Code>
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,23 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors" xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core" x:Class="WpfApp1.StokDuzenleme"
+        mc:Ignorable="d"
+        Title="Stok Düzenleme Ekranı" Height="768" Width="1366" WindowStartupLocation="CenterScreen" Icon="bb_adisyon_v3_64px.ico" Cursor="Cross">
+    <Grid>
+        <DataGrid HorizontalAlignment="Left" Height="727" VerticalAlignment="Top" Width="388" x:Name="UrunHareketleri_dg" ColumnWidth="*" IsReadOnly="True" SelectionChanged="UrunHareketleri_dg_SelectionChanged" CanUserAddRows="False"/>
+        <dxe:SpinEdit HorizontalAlignment="Left" Margin="469,94,0,0" VerticalAlignment="Top" Width="150" x:Name="miktardegistir_se"/>
+        <Label Content="Ürün Stok Miktarı" HorizontalAlignment="Left" Margin="496,72,0,0" VerticalAlignment="Top"/>
+        <Button Content="Stok Değiştir" HorizontalAlignment="Left" Margin="485,187,0,0" VerticalAlignment="Top" Width="119" Height="35" Click="Button_Click"/>
+        <DataGrid HorizontalAlignment="Left" Height="692" Margin="766,0,0,0" VerticalAlignment="Top" Width="592" x:Name="StokHareketleri_dg" CanUserAddRows="False" IsReadOnly="True" ColumnWidth="*" />
+        <Label Content="Listeden seçeceğiniz bir ürünün stoğunu buradan değiştirebilirsiniz." HorizontalAlignment="Left" Margin="438,163,0,0" VerticalAlignment="Top" FontSize="8" Foreground="Red"/>
+        <Label Content="Bu listede son 50 stok güncelleme bilgilerini görebilirsiniz." HorizontalAlignment="Left" Margin="935,700,0,0" VerticalAlignment="Top" Foreground="Red" Background="#FFCDFF22"/>
+        <Image HorizontalAlignment="Left" Height="35" Margin="894,693,0,0" VerticalAlignment="Top" Width="40" Source="{dx:DXImage SvgImages/Icon Builder/Security_WarningCircled2.svg}"/>
+        <Image HorizontalAlignment="Left" Height="17" Margin="420,164,0,0" VerticalAlignment="Top" Width="22" Source="{dx:DXImage SvgImages/Icon Builder/Actions_Info.svg}"/>
+        <TextBox HorizontalAlignment="Left" Height="20" Margin="439,143,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="216" Name="SebepTextBox"/>
+        <Label Content="Stok Güncelleme Sebebi" HorizontalAlignment="Left" Margin="476,121,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

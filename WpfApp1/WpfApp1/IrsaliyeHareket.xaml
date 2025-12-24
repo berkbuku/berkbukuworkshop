@@ -1,0 +1,31 @@
+﻿<Window x:Class="WpfApp1.IrsaliyeHareket"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="İrsaliye Hareket Ekranı" Height="768" Width="1366" Icon="bb_adisyon_v3_64px.ico" WindowStartupLocation="CenterScreen" Cursor="Cross">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="297*"/>
+            <ColumnDefinition Width="382*"/>
+        </Grid.ColumnDefinitions>
+        <DataGrid HorizontalAlignment="Left" Height="737" VerticalAlignment="Top" Width="674" x:Name="Irsaliye_dg" AutoGenerateColumns="True" AutoGeneratingColumn="Irsaliye_dg_AutoGeneratingColumn" Grid.ColumnSpan="2" ColumnWidth="*" IsReadOnly="True"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="95,145,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="IrsaliyeNo_TxtBox" Grid.Column="1" TabIndex="2"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="95,197,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="UrunID_TxtBox" Grid.Column="1" TabIndex="3"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="95,248,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name ="Miktar_TxtBox" Grid.Column="1" TabIndex="4"/>
+        <Label Content="İrsaliye No" HorizontalAlignment="Left" Margin="95,123,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label Content="Ürün ID" HorizontalAlignment="Left" Margin="95,175,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label Content="Ürün Miktarı" HorizontalAlignment="Left" Margin="95,226,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Button Content="Stok Girişi Yap" HorizontalAlignment="Left" Margin="176,297,0,0" VerticalAlignment="Top" Width="120" Height="34" x:Name="StokGiris_Button" Click="StokGiris_Button_Click" Grid.Column="1"/>
+        <DataGrid HorizontalAlignment="Left" Height="737" VerticalAlignment="Top" Width="254" Margin="510,0,0,0" x:Name="UrunHareketleri_dg" Grid.Column="1" ColumnWidth="*" IsReadOnly="True"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="95,94,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="CariKodu_TxtBox" Grid.Column="1" TabIndex="1"/>
+        <Label Content="Cari Kodu" HorizontalAlignment="Left" Margin="95,72,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="95,45,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="376" x:Name="CariAdi_TxtBox" Grid.Column="1" TabIndex="0"/>
+        <Label Content="Cari Adı" HorizontalAlignment="Left" Margin="95,23,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="248,248,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name ="BirimFiyat_TxtBox" Grid.Column="1" TabIndex="5"/>
+        <Label Content="Ürün Birim Fiyatı" HorizontalAlignment="Left" Margin="248,226,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+
+    </Grid>
+</Window>
